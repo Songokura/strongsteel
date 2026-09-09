@@ -1,0 +1,7 @@
+_project/
+_deploy/
+*.zip
+.claude/
+.DS_Store
+*.log
+__*.html
