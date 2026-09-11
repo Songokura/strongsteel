@@ -69,6 +69,7 @@ h3{font-size:clamp(24px,2.6vw,32px);line-height:.95;text-transform:uppercase;let
 .link:hover{color:var(--hot)}
 /* Instagram: одна иконка-камера с фирменным градиентом во всех точках входа */
 .ig-i{flex:0 0 auto}
+.wa-i{flex:0 0 auto}
 .btn-ig{background:rgba(255,255,255,.06);color:var(--paper);border-color:rgba(220,191,109,.45)}
 .btn-ig:hover{border-color:var(--gold);background:rgba(255,255,255,.1)}
 .link-ig{color:var(--steel3);padding-top:16px}
@@ -109,6 +110,8 @@ body.menu-open .mnav{visibility:visible;transform:none;transition:transform .4s 
 .mnav a:hover{color:var(--gold)}
 .mnav-foot{display:flex;flex-wrap:wrap;gap:10px 14px;margin-top:26px;color:var(--steel2);position:relative}
 .mnav-foot a{font:600 15px/1 var(--ft);text-transform:none;color:var(--paper);padding:12px 18px;border:1px solid rgba(255,255,255,.25);border-radius:999px}
+.mnav-foot .mwa{display:inline-flex;align-items:center;gap:8px}
+.mnav-foot .mwa .wa-i{color:var(--wa)}
 .mnav-foot .mig{display:inline-flex;align-items:center;gap:8px;border-color:rgba(220,191,109,.45)}
 @media(max-width:1120px){
   .nav{display:none}
