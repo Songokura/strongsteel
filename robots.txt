@@ -3,4 +3,4 @@ Allow: /
 Disallow: /_project/
 Disallow: /_deploy/
 
-Sitemap: https://songokura.github.io/strongsteel/sitemap.xml
+Sitemap: https://info.strongsteel.kz/sitemap.xml
