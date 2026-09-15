@@ -2,5 +2,13 @@ User-agent: *
 Allow: /
 Disallow: /_project/
 Disallow: /_deploy/
+Disallow: /assets/lang/
+Disallow: /*lang=kk
+
+User-agent: AdsBot-Google
+User-agent: AdsBot-Google-Mobile
+Allow: /
+Disallow: /assets/lang/
+Disallow: /*lang=kk
 
 Sitemap: https://info.strongsteel.kz/sitemap.xml
