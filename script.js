@@ -18,14 +18,14 @@ var root = document.documentElement;
 function conv(key){
   var id = (window.SS_CONV || {})[key];
   if (!id || typeof window.gtag !== "function") return;
-  window.gtag("event", "conversion", {send_to: id, value: 1.0, currency: "USD"});
+  window.gtag("event", "conversion", {send_to: id, value: 1.0, currency: "USD", transport_type: "beacon"});
 }
 document.addEventListener("click", function(e){
   var a = e.target.closest ? e.target.closest("a[href]") : null;
   if (!a) return;
   var h = a.getAttribute("href") || "";
   if (h.indexOf("tel:") === 0) conv("phone");
-  else if (h.indexOf("wa.me") > -1) conv("contact");
+  else if (h.indexOf("wa.me") > -1 || h.indexOf("t.me/") > -1 || h.indexOf("mailto:") === 0) conv("contact");
 }, true);
 
 /* ---------------- КАЗАХСКИЙ СЛОВАРЬ ----------------
